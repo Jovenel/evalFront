@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant - Hôtel Parimis</title>
+
+    <!-- Les POLICES du projet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Titres -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Contenu -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Les ICONES du projet -->
+    <link rel="icon" href="../css/icon.png" />
+    <!-- fontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS : Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- CSS : projet -->
+    <link rel="stylesheet" href="../css/chambre.css" />
+  </head>
+
+  <body>
+    <header class="bg-black"></header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-opacity-50">
+      <div class="container">
+        <a href="../index.html"
+          ><div class="logo">
+            <img src="../css/icon.png" alt="Logo-du-site" />
+          </div>
+        </a>
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">
+                <i class="fa-solid fa-house"></i> Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Chambres/chambres.html">Chambres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Restaurant</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../spa/spa.html">Le SPA</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../avis/avisClient.html">Avis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../formulaire/formulaire.html"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="../Reservation/reservation.html" class="btn btn btn-outline-light text-decoration-none"
+              
+              >
+                Réservez</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex p-3">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="effectuez une recherche"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">
+              Recherchez
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main class="pt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="../images/bistro_.jpg"
+                    class="d-block w-100"
+                    alt="bistro_"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../images/food_.jpg"
+                    class="d-block w-100"
+                    alt="Image de d'une table"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../images/cherries_.jpg"
+                    class="d-block w-100"
+                    alt="image de fruit"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../images/table_.jpg"
+                    class="d-block w-100"
+                    alt="vert à table"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="col-xl-12 col-sm-6 pt-3">
+              <h3>Le Parimis Notre restaurant gastronomique</h3>
+            </div>
+            <div class="row">
+              <div class="col-xl-7 col-sm-7 pt-3">
+                <p>
+                  Notre carte mettant en avant des produits locaux ne manquera
+                  pas de ravir vos papilles. Des huîtres de première fraîcheur,
+                  de délicieux poissons et fruits de mer et des plats
+                  traditionnels classiques sont servis dans l'ambiance
+                  chaleureuse du restaurant. Dans la salle principale,
+                  entièrement re-décorée, vous pourrez déguster une cuisine de
+                  qualité basée essentiellement sur des produits frais et de
+                  saison.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                  hic eveniet, vitae assumenda saepe minus voluptates pariatur
+                  placeat, excepturi accusantium aut autem minima neque iste
+                  alias magnam. Repudiandae, sed aperiam.
+                </p>
+              </div>
+              <div class="col-xl-4 col-sm-6 pt-3">
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="../images/pizza_mini.jpg"
+                        class="d-block w-100"
+                        alt="image de pizza"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="../images/spaghetti_mini.jpg"
+                        class="d-block w-100"
+                        alt="photo spaghetti"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="../images/cereal_mini.jpg"
+                        class="d-block w-100"
+                        alt="Céreal"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="row">
+                <h3 id="carte">Carte réstaurant</h3>
+                <div class="col-xl-3 col-sm-6 pt-3">
+                  <img src="../images/carte_restaurant.jpg" alt="nos vins" />
+                  <div>
+                    
+                      <a class="btn btn-outline-light a-text" target="_blank"
+                        href="../fichier_telechargeable/cartecafefrancais.pdf"
+                      >
+                        Télécharger</a
+                      >
+                    
+                  </div>
+                </div>
+                <div class="col-xl-9 col-sm-6 pt-3 shadow p-3 mb-5">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum hic eveniet, vitae assumenda saepe minus voluptates
+                    pariatur placeat, excepturi accusantium aut autem minima
+                    neque iste alias magnam. Repudiandae, sed aperiam.Il n'a pas
+                    fait que survivre cinq siècles, mais s'est aussi adapté à la
+                    bureautique informatique, sans que son contenu n'en soit
+                    modifié. Il a été popularisé dans les années 1960 grâce à la
+                    vente de feuilles Letraset contenant des passages du Lorem
+                    Ipsum, et, plus récemment, par son inclusion dans des
+                    applications de mise en page de texte, comme Aldus
+                    PageMaker.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <h3 id="dégustation">Carte Dégustation :</h3>
+              <div class="col-xl-7 col-sm-7 pt-3">
+                Le Lorem Ipsum est simplement du faux texte employé dans la
+                composition et la mise en page avant impression. Le Lorem Ipsum
+                est le faux texte standard de l'imprimerie depuis les années
+                1500, quand un imprimeur anonyme assembla ensemble des morceaux
+                de texte pour réaliser un livre spécimen de polices de texte. Il
+                n'a pas fait que survivre cinq siècles, mais s'est aussi adapté
+                à la bureautique informatique, sans que son contenu n'en soit
+                modifié. Il a été popularisé dans les années 1960 grâce à la
+                vente de feuilles Letraset contenant des passages du Lorem
+                Ipsum, et, plus récemment, par son inclusion dans des
+                applications de mise en page de texte, comme Aldus PageMaker.
+                <div>
+                  
+                    <a class="btn btn-outline-light a-text"
+                      href="../fichier_telechargeable/cartecafefrancais.pdf" target="_blank"
+                    
+                    >
+                      Télécharger</a
+                    >
+                  
+                </div>
+              </div>
+
+              <div class="col-xl-4 col-sm-6 pt-3">
+                <img src="../images/red_wine.jpg" alt="du vin rouge" />
+              </div>
+            </div>
+            <div class="row">
+              <h3 class="pt-3" id="brasserie">Carte Brasseriet</h3>
+              <div class="col-xl-3 col-sm-6 pt-3">
+                <img src="../images/carte_restaurant.jpg" alt="nos vins" />
+                <div>
+                  
+                    <a class="btn btn-outline-light a-text" target="_blank"
+                      href="../fichier_telechargeable/cartecafefrancais.pdf"
+                    >
+                      Télécharger</a
+                    >
+                  
+                </div>
+              </div>
+              <div class="col-xl-9 col-sm-6 pt-3 shadow p-3 mb-5">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                  hic eveniet, vitae assumenda saepe minus voluptates pariatur
+                  placeat, excepturi accusantium aut autem minima neque iste
+                  alias magnam. Repudiandae, sed aperiam.Il n'a pas fait que
+                  survivre cinq siècles, mais s'est aussi adapté à la
+                  bureautique informatique, sans que son contenu n'en soit
+                  modifié. Il a été popularisé dans les années 1960 grâce à la
+                  vente de feuilles Letraset contenant des passages du Lorem
+                  Ipsum, et, plus récemment, par son inclusion dans des
+                  applications de mise en page de texte, comme Aldus PageMaker.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h3 id="hairaire">Horaires d'ouverture du Restaurant Parimis:</h3>
+              Lundi au vendredi: 11h30 - 15h et 19h - 23h Samedi et dimanche :
+              11h30 - 15h et 19h - minuit Réservez votre table par téléphone :
+              +33 (1) 49 55 30 04
+            </div>
+          </div>
+          <div class="col-md-3">
+            <ul class="list-group">
+              <li class="list-group-item bg-royalblue text-black">
+                Restaurant
+              </li>
+              <li class="list-group-item">
+                <a href="#carte" class="text-decoration-none"
+                  >Carte Restaurant</a
+                >
+              </li>
+              <li class="list-group-item">
+                <a href="#dégustation" class="text-decoration-none"
+                  >Carte Dégustation</a
+                >
+              </li>
+              <li class="list-group-item">
+                <a href="#brasserie" class="text-decoration-none"
+                  >Carte Brasserie
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="#hairaire" class="text-decoration-none"
+                  >HORAIRES DU RESTAURANT</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br />
+    </main>
+
+    <!-- footer -->
+    <div class="container text-muted">
+      <footer class="pt-3">
+        <div class="row">
+          <div class="col-xl-3 col-sm col-md ">
+            
+            Parimis <address> 1, avenue Montaigne 75008 Paris FRANCE </address>
+            "Téléphone"
+            <a href="0149553000" class="text-decoration-none text-muted" > +33 (1) 49 55 30 00 </a> <br>
+             Fax +33 (1) 49 55 30 10<br>
+           <a href="contact@hotel-parimis.fr" class="text-decoration-none text-muted" > contact@hotel-parimis.fr </a> 
+            </div>
+              
+        <div class="col-xl-3 col-sm col-md ">
+            <form>
+              <h5>Inscrivez vous à notre newsletter</h5>
+              <p>
+                Un résumé mensuel de ce qui est nouveau et excitant chez nous.
+              </p>
+              <div class="d-flex w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden"
+                  >Email address</label
+                >
+                <input
+                  id="newsletter1"
+                  type="text"
+                  class="form-control col-sm col-md"
+                  placeholder="Votre address e-mail"
+                />
+                <button class="btn btn-outline-light" type="submit">
+                  S'inscrire
+                </button>
+              </div>
+            </form>
+        </div>
+        <div class="col-sm- col-md s-2">
+          <h5>Nous sommes aussi présent sur les réseaux socieau</h5>
+          <p>Suivez nous sur :</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="social-media" href="https://twitter.com/"
+                ><i class="fa-brands fa-twitter-square"></i
+                ></a> </li>
+                <li class="ms-3">
+                  <a class="social-media" href="https://www.instagram.com/"
+                    ><i class="fa-brands fa-instagram-square"></i
+                    ></a> </li>
+                    <li class="ms-3">
+                      <a class="social-media" href="https://fr-fr.facebook.com/"
+                        ><i class="fa-brands fa-facebook-square"></i
+                        ></a> </li>
+
+                        <li class="ms-3">
+                          <a class="social-media" href="https://fr.linkedin.com/"
+                            ><i class="fa-brands fa-linkedin"></i></a> </li> </ul> </div>
+          </div>
+        <div
+          class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        >
+          <p class="col-md-4 mb-0 text-muted">&copy; 2022 Parimis Hotel</p>
+
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link px-2 text-muted">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="../mentionLegale/mentionlegal.html" class="nav-link px-2 text-muted">Mention légale</a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="../Acces/acces.html" class="nav-link px-2 text-muted">Accès</a>
+            </li>
+            <li class="nav-item">
+              <a href="../plan-du-site/plan.html" class="nav-link px-2 text-muted">Plan du site</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JS : Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

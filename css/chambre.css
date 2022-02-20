@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+}
+img {
+  width: 100%;
+}
+.logo {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 2px;
+  top: 2px;
+}
+@media screen and (max-width:768px) {
+  .logo{
+      width: 50px;
+      height: 20px;
+      margin-left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+      max-width: 60px;
+      margin-left: 0;
+      margin-top: 10px;
+      
+  }
+}
+.a-text {
+  text-decoration: none;
+  color: white;
+}
+
+.conteneur {
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.bouton {
+	background-color: #0923e7;
+	border: 2px solid #0a2dc7;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}

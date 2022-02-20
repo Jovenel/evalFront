@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="icon" href="../css/icon.png">
+    <!--CSS de bootstrap-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!--css du projet-->
+    <link rel="stylesheet" href="../css/form.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="" >
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-opacity-50">
+      <div class="container">
+         <a href="../index.html"><div class="logo"> <img src="../css/icon.png" alt="Logo-du-site"></div></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="../index.html"> <i class="fa-solid fa-house"></i> Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Chambres/chambres.html">Chambres</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Restaurant/restaurant.html">Restaurant</a>
+              </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="../spa/spa.html">Le SPA</a>
+                </li>
+                  
+                  
+                  <li class="nav-item">
+                      <a class="nav-link" href="../avis/avisClient.html">Avis</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="#">Contact</a>
+                  </li>
+                  <li><a class="btn btn btn-outline-light text-decoration-none" href="../Reservation/reservation.html"> Réservez</a></li>
+              </ul>
+              <form class="d-flex p-3">
+                  <input class="search me-2" type="search" placeholder="effectuez une recherche" aria-label="Search">
+                  <button class="btn btn-outline-light" type="submit">Recherchez</button>
+                </form>
+          </div>
+      </div>
+  </nav>
+  <div class="container">
+    <div class="conteneur">
+        <div class="header">
+            <h2>Formulaire de Contact</h2>
+        </div>
+        <form id="form" class="form" method="get">
+            <div class="form-control">
+
+              
+
+                <label for="username">Nom</label>
+                <input type="text" placeholder="Votre nom" id="username" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>message d'erreur</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Prénom</label>
+                <input type="text" placeholder="Votre prénom" id="prenom" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>message d'erreur</small>
+            </div>
+            <div class="form-control">
+              <label for="username">Email</label>
+              <input type="email" placeholder="john@expl.com" id="email" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>message d'erreur</small>
+          </div>
+            <div class="form-control">
+              <label for="entreprise">Entreprise</label>
+              <input type="text" placeholder="Nom de votre société" id="entreprise" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>message d'erreur</small>
+          </div>
+          <div class="form-control">
+            <label for="pays">Pays</label>
+            <input type="text" placeholder="Votre pays" id="pays" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>message d'erreur</small>
+        </div>
+        <div class="form-control">
+          <label for="sujet">Sujet</label>
+          <input type="text" placeholder="Sujet" id="sujet" />
+          <div class="form-control"> 
+            <label for="Catégories">Catégories</label>
+            <div class="form-check col-xl-3 col-sm-3">
+              <input class="" type="radio" name="flexRadioDefault" id="Catégories">
+              <label class="" for="flexRadioDefault1">
+                Chambre 
+              </label>
+              <input class="" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="" for="flexRadioDefault1">
+                restaurant 
+              </label>
+      
+              <input class="" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <label class="" for="flexRadioDefault2">
+                Spa 
+              </label>
+      
+              <input class="" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+              <label class="" for="flexRadioDefault3">
+                Ordre général 
+              </label>
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>message d'erreur</small>
+            </div>
+            </div>
+          <label for="demande">Vore demande</label>
+          <textarea name="sujet" class="form-control" id="demande" placeholder="Décrivez vote de demande" cols="30" rows="6"></textarea>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>message d'erreur</small>
+      </div>
+  
+            
+            <button class="button" type="submit">Submit</button>
+        </form>
+      </div>
+        <!-- footer -->
+        <div class="container text-muted">
+          <footer class="pt-3">
+            <div class="row">
+              <div class="col-xl-3 col-sm col-md ">
+                
+                  Parimis <address> 1, avenue Montaigne 75008 Paris FRANCE </address>
+                  "Téléphone"
+                  <a href="0149553000" class="text-decoration-none text-muted"> +33 (1) 49 55 30 00 </a> <br>
+                   Fax +33 (1) 49 55 30 10<br>
+                 <a href="contact@hotel-parimis.fr" class="text-decoration-none text-muted"> contact@hotel-parimis.fr </a>
+                </div>
+                  
+            <div class="col-xl-3 col-sm col-md ">
+                <form>
+                  <h5>Inscrivez vous à notre newsletter</h5>
+                  <p>
+                    Un résumé mensuel de ce qui est nouveau et excitant chez nous.
+                  </p>
+                  <div class="d-flex w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden"
+                      >Email address</label
+                    >
+                    <input
+                      id="newsletter1"
+                      type="text"
+                      class="search col-sm col-md"
+                      placeholder="Votre address e-mail"
+                    />
+                    <button class="btn btn-outline-light" type="submit">
+                      S'inscrire
+                    </button>
+                  </div>
+                </form>
+            </div>
+            <div class="col-sm- col-md s-2">
+              <h5>Nous sommes aussi présent sur les réseaux socieau</h5>
+              <p>Suivez nous sur :</p>
+              <ul class="list-unstyled d-flex">
+                <li class="ms-3">
+                  <a class="social-media" href="https://twitter.com/"
+                    ><i class="fa-brands fa-twitter-square"></i
+                    ></a> </li>
+                    <li class="ms-3">
+                      <a class="social-media" href="https://www.instagram.com/"
+                        ><i class="fa-brands fa-instagram-square"></i
+                        ></a> </li>
+                        <li class="ms-3">
+                          <a class="social-media" href="https://fr-fr.facebook.com/"
+                            ><i class="fa-brands fa-facebook-square"></i
+                            ></a> </li>
+    
+                            <li class="ms-3">
+                              <a class="social-media" href="https://fr.linkedin.com/"
+                                ><i class="fa-brands fa-linkedin"></i></a> </li> </ul> </div>
+            
+              </div>
+            <div
+              class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+            >
+              <p class="col-md-4 mb-0 text-muted">&copy; 2022 Parimis Hotel</p>
+    
+              <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item">
+                  <a href="../index.html" class="nav-link px-2 text-muted">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../mentionLegale/mentionlegal.html" class="nav-link px-2 text-muted">Mention légale</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="../Acces/acces.html" class="nav-link px-2 text-muted">Accès</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../plan-du-site/plan.html" class="nav-link px-2 text-muted">Plan du site</a>
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+  </div>
+  </div>
+    
+    
+    <script src="../js/script.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
