@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spa - Hôtel Parimis</title>
+
+    <!-- Les POLICES du projet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Titres -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Contenu -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Les ICONES du projet -->
+    <link rel="icon" href="../css/icon.png" />
+    <!-- fontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS : Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- CSS : projet -->
+    <link rel="stylesheet" href="../css/chambre.css" />
+  </head>
+
+  <body>
+    <header class="bg-black"></header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-opacity-50">
+      <div class="container">
+        <a href="../index.html"
+          ><div class="logo">
+            <img src="../css/icon.png" alt="Logo-du-site" />
+          </div>
+        </a>
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">
+                <i class="fa-solid fa-house"></i> Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Chambres/chambres.html">Chambres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Restaurant/restaurant.html"
+                >Restaurant</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="../spa/spa.html">Le SPA</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../avis/avisClient.html">Avis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../formulaire/formulaire.html"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="../Reservation/reservation.html"
+                class="btn btn btn-outline-light"
+              >
+                Réservez</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex p-3">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="effectuez une recherche"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">
+              Recherchez
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main class="pt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="col-xl- col-sm-6 pt-3">
+              <h3>
+                le SPA Parimis n’a pas son pareil pour ralentir le rythme de la
+                vie.
+              </h3>
+            </div>
+            <div class="row">
+              <div class="col-xl-7 col-sm-7 pt-3">
+                <p>
+                  Vous vous en apercevrez, en descendant dans cette retraite à
+                  la fois zen et design, décorée comme un jardin à la française
+                  – les Tuileries peut-être, ou bien est-ce plutôt un petit coin
+                  du jardin du Luxembourg ? – et entièrement dédiée à votre
+                  bien-être. Après une journée de visite à Paris, il n’y a rien
+                  de tel, qu’un massage relaxantsur réservation) , la chaleur du
+                  hammam spacieux (6 personnes) ou celle du sauna, dans cette
+                  atmosphère poétique et apaisante.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                  hic eveniet, vitae assumenda saepe minus voluptates pariatur
+                  placeat, excepturi accusantium aut autem minima neque iste
+                  alias magnam. Repudiandae, sed aperiam.
+                </p>
+              </div>
+              <div class="col-xl-4 col-sm-6 pt-3">
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="../images/woman_spa.jpg"
+                        class="d-block w-100"
+                        alt="première image"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="../images/relaxation_spas.jpg"
+                        class="d-block w-100"
+                        alt="deuxième image"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="../images/head-massage.jpg"
+                        class="d-block w-100"
+                        alt="troisièmes image"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="row nos_offres">
+                <h3>Des soins pensés pour vous</h3>
+                <div class="col-xl-9 col-sm-6 pt-3 shadow p-3 mb-5">
+                  <p>
+                    Nos soins ont été conçus pour répondre aux besoins de
+                    chacun. Tous nos soins débutent par un diagnostic
+                    personnalisé de la peau autour d’un dialogue afin de
+                    proposer un soin sur-mesure et adapté. Il sera suivi par un
+                    modelage du dos pour sublimer la posture. .Quoi de plus
+                    romantique que de réserver une chambre avec un décor
+                    romantique et insolite et de pouvoir privatiser un jacuzzi®
+                    pendant une heure pour un moment de détente et de bien-être
+                    au spa de l’hôtel ?
+                  </p>
+                </div>
+                <div class="col-xl-3 col-sm-6 pt-3">
+                  <img src="../images/SPA.jpg" alt="nos vins" />
+                </div>
+              </div>
+              <div class="row nos_offres">
+                <h3 id="détente">Soin Détente</h3>
+                <div class="col-xl-9 col-sm-6 pt-3 shadow p-3 mb-5">
+                  <p>
+                    Le Soin Détente Parimis vous invite aujourd'hui à vivre une
+                    expérience à part. ce massage traditionnel Thaïlandais
+                    imprégné de l’esprit du yoga et de la méditation est
+                    originaire de l’Inde. Il se déroule entre une chorégraphie
+                    de gestes et étirements, mais aussi de pressions effectuées
+                    en harmonie avec la respiration.
+                  </p>
+                </div>
+                <div class="col-xl-3 col-sm-6 pt-3">
+                  <img src="../images/relaxation_spas.jpg" alt="nos vins" />
+                </div>
+              </div>
+              <div class="row nos_offres">
+                <h3 id="découverte">Soin Découverte :</h3>
+                <div class="col-xl-9 col-sm-6 pt-3 shadow p-3 mb-5">
+                  <ul>
+                    <li>D’améliorer votre perception sensorielle</li>
+                    <li>D’évacuer le stress de la journée</li>
+                    <li>De détendre vos muscles</li>
+                    <li>De relâcher vos tensions</li>
+                    <li>De mieux résister au stress</li>
+                  </ul>
+                </div>
+                <div class="col-xl-3 col-sm-6 pt-3">
+                  <img src="../images/spa_femme.jpg" alt="nos vins" />
+                </div>
+              </div>
+              <div class="row nos_offres">
+                <h3 id="relaxant">Soin Relaxant :</h3>
+                <div class="col-xl-9 col-sm-6 pt-3 shadow p-3 mb-5">
+                  <ul>
+                    <li>Elimine la plupart des tensions liées au stress</li>
+                    <li>Raffermit les muscles</li>
+                    <li>Favorise la circulation sanguine et lymphatique</li>
+                    <li>Aide à éliminer les toxines</li>
+                    <li>Adoucit et assouplit la peau</li>
+                  </ul>
+                </div>
+                <div class="col-xl-3 col-sm-6 pt-3">
+                  <img src="../images/still_life.jpg" alt="nos vins" />
+                </div>
+              </div>
+              <div class="row nos_offres">
+                <h3 id="plaisir">Soin Plaisir :</h3>
+                <div class="col-xl-9 col-sm-6 pt-3 shadow p-3 mb-5">
+                  <ul>
+                    <li>une meilleure stabilité émotionnelle</li>
+                    <li>une respiration ample et profonde</li>
+                    <li>évacuer votre stress</li>
+                    <li>vous relaxer, reposer votre corps</li>
+                    <li>aider au relâchement de vos tensions</li>
+                  </ul>
+                </div>
+                <div class="col-xl-3 col-sm-6 pt-3">
+                  <img src="../images/hairdresser_man.jpg" alt="nos vins" />
+                </div>
+                <div class="row nos_offres">
+                  <h3 id="evasion">Soin Evasion :</h3>
+                  <div class="col-xl-9 col-sm-6 pt-3 shadow p-3 mb-5">
+                    <ul>
+                      <li>Une respiration plus ample et plus profonde</li>
+                      <li>Améliorer le drainage des liquides</li>
+                      <li>évacuer votre stress</li>
+                      <li>Intensifier les échanges énergétiques</li>
+                      <li>aider au relâchement de vos tensions</li>
+                    </ul>
+                  </div>
+                  <div class="col-xl-3 col-sm-6 pt-3">
+                    <img src="../images/hairdresser_man.jpg" alt="nos vins" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div></div>
+          </div>
+          <div class="col-md-3">
+            <ul class="list-group">
+              <li class="list-group-item bg-royalblue text-black">
+                Liste des soins
+              </li>
+              <li class="list-group-item">
+                <a href="#détente" class="text-decoration-none">Soin Détente</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#découverte" class="text-decoration-none"
+                  >Soin Découverte</a
+                >
+              </li>
+              <li class="list-group-item">
+                <a href="#relaxant" class="text-decoration-none"
+                  >Soin Relaxant –</a
+                >
+              </li>
+              <li class="list-group-item">
+                <a href="#plaisir" class="text-decoration-none">Soin Plaisir</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#evasion" class="text-decoration-none">Soin Evasion</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br />
+    </main>
+
+    <!-- footer -->
+    <div class="container text-muted">
+      <footer class="pt-3">
+        <div class="row">
+          <div class="col-xl-3 col-sm col-md ">
+            
+            Parimis <address> 1, avenue Montaigne 75008 Paris FRANCE </address>
+            "Téléphone"
+            <a href="0149553000" class="text-decoration-none text-muted" > +33 (1) 49 55 30 00 </a> <br>
+             Fax +33 (1) 49 55 30 10<br>
+           <a href="contact@hotel-parimis.fr" class="text-decoration-none text-muted" > contact@hotel-parimis.fr </a>
+            </div>
+              
+        <div class="col-xl-3 col-sm col-md ">
+            <form>
+              <h5>Inscrivez vous à notre newsletter</h5>
+              <p>
+                Un résumé mensuel de ce qui est nouveau et excitant chez nous.
+              </p>
+              <div class="d-flex w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden"
+                  >Email address</label
+                >
+                <input
+                  id="newsletter1"
+                  type="text"
+                  class="form-control col-sm col-md"
+                  placeholder="Votre address e-mail"
+                />
+                <button class="btn btn-outline-light" type="submit">
+                  S'inscrire
+                </button>
+              </div>
+            </form>
+        </div>
+        <div class="col-sm- col-md s-2">
+          <h5>Nous sommes aussi présent sur les réseaux socieau</h5>
+          <p>Suivez nous sur :</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="social-media" href="https://twitter.com/"
+                ><i class="fa-brands fa-twitter-square"></i
+                ></a> </li>
+                <li class="ms-3">
+                  <a class="social-media" href="https://www.instagram.com/"
+                    ><i class="fa-brands fa-instagram-square"></i
+                    ></a> </li>
+                    <li class="ms-3">
+                      <a class="social-media" href="https://fr-fr.facebook.com/"
+                        ><i class="fa-brands fa-facebook-square"></i
+                        ></a> </li>
+
+                        <li class="ms-3">
+                          <a class="social-media" href="https://fr.linkedin.com/"
+                            ><i class="fa-brands fa-linkedin"></i></a> </li> </ul> </div>
+        
+          </div>
+        <div
+          class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        >
+          <p class="col-md-4 mb-0 text-muted">&copy; 2022 Parimis Hotel</p>
+
+          <a
+            href="/"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+          >
+            <svg class="bi me-2" width="40" height="32">
+              <use xlink:href="#bootstrap" />
+            </svg>
+          </a>
+
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link px-2 text-muted">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="../mentionLegale/mentionlegal.html" class="nav-link px-2 text-muted">Mention légale</a>
+            </li>
+            <li class="nav-item">
+              <a href="../Accès/accès.html" class="nav-link px-2 text-muted">Accès</a>
+            </li>
+            <li class="nav-item">
+              <a href="../plan-du-site/plan.html" class="nav-link px-2 text-muted">Plan du site</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JS : Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
